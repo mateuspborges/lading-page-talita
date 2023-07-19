@@ -1,0 +1,209 @@
+html,
+body {
+    font-family: 'opens-sans', arial, helvetica;
+
+    height: 100vh;
+}
+.header{
+    background: url(../imagens/bg-header.jpeg) no-repeat left center;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 40px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-bar ul li a{
+    font-family: 'Roboto-condensed',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #300f20;
+    position: relative;
+
+}
+
+.nav-bar a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background: #300f20;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.8s ease-in-out;
+    
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+.social {
+    padding: 10px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.fa-whatsapp {
+    color: green;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-instagram {
+    color: rgb(253, 17, 107);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.home {
+    background: url(../imagens/bg-home.jpeg) no-repeat center center;
+    background-size: cover;
+
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.img-sobre {
+    width: 150px;
+    height: 80px;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 15px;
+}
+.upercase{
+    text-transform: uppercase;
+}
+.area-texto-sobre {
+    
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    line-height: 30px;
+
+}
+.p-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    transform-origin: center;
+    justify-content: center;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to right top, #450334, #300f20, #300f20);
+    position: relative;
+}
+
+.text-area_servico {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    color: white;
+}
+
+.info-card {
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+}
+
+.title-card {
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    font-size: 14px;
+}
+
+.titulo_servico {
+    font-size: 28px;
+}
+
+.text-area_servico {
+    content: '';
+    animation: subir 3s ease-in-out infinite alternate;
+    animation-delay: 2s;
+    animation-play-state: running;
+}
+
+@keyframes subir {
+    from {
+        transform: translatey(-70px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wave1 {
+    animation: moveWave1 8s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-1000px);
+    }
+}
+
+.wave2 {
+    animation: moveWave1 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-800px);
+    }
+}
+
+.wave3 {
+    animation: moveWave1 9s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(-600px);
+    }
+}
+
+.contato {
+    height: 100vh;
+
+}
