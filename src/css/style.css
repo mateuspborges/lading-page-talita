@@ -29,49 +29,80 @@ body {
     background-size: cover;
 
     background-attachment: fixed;
-    height: 100vh;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+.home::after{
+    content: url(../imagens/seta_preta.png);
+    position: absolute;
+    height: 35px;
+    bottom: 50px;
+    animation: aparecer 0.6s infinite alternate ease-in-out;
+}
+@-webkit-keyframes aparecer{
+    0%{
+        -webkit-transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(20px);
+        opacity: 0.9;
+    }
+}
+
 /* Sobre */
 .sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.item{
+    padding: 20%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 100vh;
-
+    align-items: center;
+    justify-content: center;
+}
+.item h2{
+    font-weight: 700;
+    font-size:3.4rem;
+    align-self: start;
+}
+.item p{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.sobre .image{
+    width: 100%;
+    height: 100%;
+}
+.sobre .image.right{
+    background: url(../imagens/right-sobre.jpg) center center no-repeat;
+    background-size: cover;
 }
 
-.img-sobre {
-    width: 150px;
-    height: 80px;
-    border-bottom: 1px solid grey;
-    margin-top: 10px;
-    margin-left: 15px;
-    padding: 15px;
+.sobre .image.left{
+    background: url(../imagens/bg-home.jpeg) center center no-repeat;
+    background-size: cover;
 }
 .upercase{
     
     text-transform: uppercase;
 }
-.area-texto-sobre {
-    font-size: 1.4rem;
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px;
-    flex-wrap: wrap;
-    line-height: 30px;
+@media (max-width:425px){
+    .sobre .item{
+        text-align: center;
+    }
+    .sobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
 
-}
-.p-sobre{
-    display: flex;
-    flex-wrap: wrap;
-    transform-origin: center;
-    justify-content: center;
-    
-}
 /* Serviço */
 .servico {
     display: flex;

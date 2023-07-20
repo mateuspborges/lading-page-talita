@@ -3,7 +3,8 @@
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-    min-height: 75px;
+    max-height: 75px;
+    height:100%;
 }
 .header nav ul{
     display:flex;
