@@ -8,37 +8,16 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
     font-family: 'Roboto-condensed';
 }
-
-@media  (max-width:768px){
-    
-    #meu-menu{
-     
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    #header{
-        background:none;
-    }
-    .responsive-text{
-        display: flex;
-        position: absolute;
-    }
-    .logo{
-       
-    }
-    .p-sobre p{
-        width:340px;
-        height: 400px;
-        font-size: 14px;
-    }
-   
+a{
+    text-decoration: none;
+    color: #000;
 }
-@media (max-width:320px){
-    #header{
-        background:blue;
-    }   
+ul{
+    list-style: none;
 }
+

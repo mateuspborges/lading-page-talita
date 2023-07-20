@@ -1,51 +1,10 @@
 html,
 body {
+    font-size: 62.5% ;  /*1rem = 10px*/
     font-family: 'opens-sans', arial, helvetica;
-
     height: 100vh;
 }
-.header{
-    background: url(../imagens/bg-header.jpeg) no-repeat left center;
-    background-size: cover;
-    height: 100vh;
-    color: black;
-}
-header{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    padding-top: 40px;
-}
-.nav-bar ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-.nav-bar ul li a{
-    font-family: 'Roboto-condensed',sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: #300f20;
-    position: relative;
-
-}
-
-.nav-bar a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background: #300f20;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: 0.8s ease-in-out;
-    
-}
-
-.nav-bar a:hover::after {
-    width: 100%;
-}
-
+/* Icones fixos */
 .social {
     padding: 10px;
     position: fixed;
@@ -64,7 +23,7 @@ header{
     font-size: 30px;
     cursor: pointer;
 }
-
+/* Home */
 .home {
     background: url(../imagens/bg-home.jpeg) no-repeat center center;
     background-size: cover;
@@ -75,7 +34,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-
+/* Sobre */
 .sobre {
     display: flex;
     justify-content: center;
@@ -94,10 +53,11 @@ header{
     padding: 15px;
 }
 .upercase{
+    
     text-transform: uppercase;
 }
 .area-texto-sobre {
-    
+    font-size: 1.4rem;
     margin-top: 20px;
     text-align: center;
     padding: 10px;
@@ -110,8 +70,9 @@ header{
     flex-wrap: wrap;
     transform-origin: center;
     justify-content: center;
+    
 }
-
+/* Serviço */
 .servico {
     display: flex;
     align-items: center;
@@ -137,15 +98,16 @@ header{
 }
 
 .title-card {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .info-card p {
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 .titulo_servico {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .text-area_servico {
