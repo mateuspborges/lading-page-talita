@@ -12,17 +12,6 @@ body {
     bottom: 50px;
 }
 
-.fa-whatsapp {
-    color: green;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.fa-instagram {
-    color: rgb(253, 17, 107);
-    font-size: 30px;
-    cursor: pointer;
-}
 /* Home */
 .home {
     background: url(../imagens/bg-home.jpeg) no-repeat center center;
@@ -229,9 +218,15 @@ body {
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: #450334;
     color: #fff;
     font-size: 1.6rem;
     padding:10px ;
+}
+footer .right{
+    align-self: flex-end;
+}
+footer .right a{
+    color: #fff;
 }
