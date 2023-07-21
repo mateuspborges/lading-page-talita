@@ -23,7 +23,7 @@ nav a::after {
     height: 4px;
     background: rgb(110, 109, 109);
     position: absolute;
-    bottom: 6px;
+    bottom: 0px;
     left: 0;
     transition: 0.8s ease-in-out;
     
